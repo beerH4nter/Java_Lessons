@@ -27,6 +27,13 @@ public class Main {
         y = x + 10;
         System.out.println("After changes: x = " + x + " y = " + y);
 
+        x = 10;
+        y = 15;
+        System.out.println("x = " + x + " y = " + y);
+        x = x + 2 * 4;
+        y = y - 5;
+        System.out.println("After changes: x = " + x + " y = " + y);
+
 
 
 
