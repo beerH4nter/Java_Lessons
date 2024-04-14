@@ -51,114 +51,100 @@ public class Main {
     public static void fillArray(int[]array)
     {
         for (int i = 0; i < array.length; i++) {
-            array[i] = rnd.nextInt(20);
+            array[i] = rnd.nextInt(30);
         }
     }
 
     public static void main(String[] args)
     {
 
-//        int[] array = new int[10];
-//
-//        fillArray(array);
-//
-//        System.out.println("Array:");
-//        printArray(array);
-//
-//        simpleSort(array);
-//
-//        System.out.println("\nAfter simple sort: ");
-//        printArray(array);
-//
-//        fillArray(array);
-//
-//        System.out.println("\nArray: ");
-//        printArray(array);
-//
-//        bubbleSort(array);
-//
-//        System.out.println("\nAfter bubble sort: ");
-//        printArray(array);
-
-
-
-        int[][] matrix = new int[6][6];
-
+        System.out.println("Task 1");
+        int[][] matrix = new int[8][8];
         for (int i = 0; i < matrix.length; i++)
         {
-            for (int j = 0; j < matrix.length; j++)
-            {
-                matrix[i][j] = rnd.nextInt(20);
-            }
+            fillArray(matrix[i]);
         }
 
-        System.out.println("Matrix: ");
+        for (int i = 0; i < matrix.length; i++)
+        {
+            printArray(matrix[i]);
+            System.out.println();
+        }
+
+        System.out.println("\nTask 2");
+
+        for (int i = 0; i < matrix.length; i++)
+        {
+            fillArray(matrix[i]);
+        }
+
+        System.out.println("\nMatrix: ");
+        for (int i = 0; i < matrix.length; i++)
+        {
+            printArray(matrix[i]);
+            System.out.println();
+        }
+        System.out.println();
+
         for (int i = 0; i < matrix.length; i++)
         {
             for (int j = 0; j < matrix.length; j++)
             {
-                System.out.print(matrix[i][j] + " ");
+                System.out.print(matrix[(matrix.length - 1) - i][(matrix.length - 1) - j] + " ");
             }
             System.out.println();
         }
 
-
-        int[] array = new int[36];
-
-        int count = 0;
+        System.out.println("\nTask 3");
         for (int i = 0; i < matrix.length; i++)
         {
-            for (int j = 0; j < matrix.length; j++)
+            fillArray(matrix[i]);
+        }
+        System.out.println();
+
+        int j = 0;
+        int count = 1;
+        for (int k = 0; k < matrix.length * matrix.length; k++)
+        {
+            System.out.print(matrix[count - 1][j] + " ");
+            j++;
+            if(k == (matrix.length * count) - 1)
             {
-                array[count] = matrix[i][j];
+                j = 0;
                 count++;
+                System.out.println();
             }
+
         }
 
-        System.out.println();
-        System.out.println("\nNew array: ");
-        for (int i = 0; i < array.length; i++)
-        {
-            System.out.print(array[i] + " ");
-        }
-
-        int buff = 0;
-        for (int i = 0; i < array.length; i++)
-        {
-            for (int j = i + 1; j < array.length; j++)
-            {
-                if(array[i] > array[j])
-                {
-                    buff = array[i];
-                    array[i] = array[j];
-                    array[j] = buff;
-                }
-            }
-        }
-
-        System.out.println();
-        System.out.println("\nSorted new array: ");
-        for (int i = 0; i < array.length; i++)
-        {
-            System.out.print(array[i] + " ");
-        }
-
-        count = 0;
+        System.out.println("\nTask 4");
         for (int i = 0; i < matrix.length; i++)
         {
-            for (int j = 0; j < matrix.length; j++)
-            {
-                matrix[i][j] = array[count];
-                count++;
-            }
+            fillArray(matrix[i]);
         }
-
         System.out.println();
-        System.out.println("\n Sorted matrix");
+
+        System.out.println("Simple matrix: ");
         for (int i = 0; i < matrix.length; i++)
         {
             printArray(matrix[i]);
-            System.out.print("    ");
+            System.out.println();
+        }
+
+        for (int i = 0; i < matrix.length; i++)
+        {
+            for (int k = 0; k < matrix.length; k++)
+            {
+                if(matrix[i][j] % 2 == 0 && matrix[i][j] % 5 == 0)
+                {
+                    matrix[i][j] = 999;
+                }
+            }
+        }
+        System.out.println("\nMatrix after swap: ");
+        for (int i = 0; i < matrix.length; i++)
+        {
+            printArray(matrix[i]);
             System.out.println();
         }
 
