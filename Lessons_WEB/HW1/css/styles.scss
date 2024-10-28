@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    a{
+        text-decoration: none;
+    }
+}
+
+body{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.header{
+    width: 100%;
+    height: 40px;
+    h1{
+        font-weight: normal;
+    }
+
+}
+
+#afterHeaderText{
+
+    p{
+        padding-top: 5px;
+        color: #6b7074;
+    }
+
+}
+
+.mainDescriptionText{
+    padding-top: 20px;
+    p{
+        padding-bottom: 10px;
+    }
+}
+
+#listBox{
+    width: 230px;
+    height: 290px;
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1 ;
+    padding-left: 7px;
+    padding-top: 7px;
+
+    ol{
+        
+        list-style-type: none;
+        counter-reset: item;
+        
+        li{
+            counter-increment: item;
+            display: block;
+            padding-bottom: 4px;
+            &:before{
+                content: counters(item, ".") " ";
+            }
+
+            ol{
+                padding-left: 25px;
+                li{
+                    padding-top: 4px;
+                }
+            }
+
+        }
+    }
+    
+
+    p{
+
+        padding-left: 40px;
+        padding-bottom: 8px;
+    }
+
+}
+
+.subHeader{
+    p{
+
+        font-size: 16pt;
+
+        span {
+            font-size: 12pt;
+            font-weight: normal;
+        }
+        
+    }
+}
+
+
+#lastUnnumericList{
+    
+    padding-left: 30px;
+    padding-top: 7px;
+    ul{
+        li{
+            padding-bottom: 7px;
+        }
+    }
+}

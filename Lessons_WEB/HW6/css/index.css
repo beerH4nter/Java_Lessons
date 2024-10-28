@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar.navbar-expand-lg.bg-body-tertiary {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  height: 50px;
+  padding: 0;
+  background-color: #1b5589 !important;
+}
+.navbar.navbar-expand-lg.bg-body-tertiary .logo img {
+  margin-left: 30px;
+  width: 20px;
+  height: 20px;
+}
+.navbar.navbar-expand-lg.bg-body-tertiary .nav-link {
+  color: white;
+}
+.navbar.navbar-expand-lg.bg-body-tertiary .nav-link.not_current {
+  filter: brightness(70%);
+}
+.navbar.navbar-expand-lg.bg-body-tertiary .profile_button {
+  margin-right: 20px;
+}
+.navbar.navbar-expand-lg.bg-body-tertiary .profile_button a img {
+  height: 40px;
+}
+
+.main_user_title {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  font-size: xx-large;
+  font-weight: lighter;
+}
+.main_user_title hr {
+  margin-left: 40px;
+  margin-right: 40px;
+  color: lightgray;
+}
+
+.container {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+.container .news_container {
+  width: 50%;
+}
+.container .news_container .container_title {
+  width: 100%;
+  text-align: center;
+}
+.container .news_container .news_content {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+.container .news_container .box {
+  padding-top: 10px;
+  display: flex;
+  border-bottom: lightgray solid 1px;
+}
+.container .news_container .box .picture {
+  padding-left: 20px;
+}
+.container .news_container .box .picture img {
+  height: 80px;
+}
+.container .news_container .box .news_text {
+  padding-left: 20px;
+}
+.container .news_container .box:nth-child(3) {
+  border-bottom: 0;
+}
+.container .news_container .button_zone_news {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.container .news_container .button_zone_news .btn.btn-secondary {
+  margin-top: 10px;
+  width: 100%;
+}
+.container .rewards_container {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.container .rewards_container .container_title {
+  width: 100%;
+  text-align: center;
+}
+.container .rewards_container .list_container {
+  display: flex;
+  align-items: center;
+}
+.container .rewards_container .list_container .right_arrows {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.container .rewards_container .list_container .right_arrows .right_arrow:nth-child(odd) {
+  margin-top: 20px;
+  width: 150px;
+  height: 20px;
+  position: relative;
+  background: lightgray;
+  margin-right: 20px;
+}
+.container .rewards_container .list_container .right_arrows .right_arrow:nth-child(odd):before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid lightgray;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.container .rewards_container .list_container .right_arrows .right_arrow:nth-child(odd) .text_in_arrow {
+  position: relative;
+  left: 20px;
+  bottom: 4px;
+}
+.container .rewards_container .list_container .right_arrows .right_arrow:nth-child(even) {
+  margin-top: 20px;
+  width: 100px;
+  height: 20px;
+  position: relative;
+  background: lightgray;
+  margin-right: 20px;
+}
+.container .rewards_container .list_container .right_arrows .right_arrow:nth-child(even):before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid lightgray;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.container .rewards_container .list_container .right_arrows .right_arrow:nth-child(even) .text_in_arrow {
+  position: relative;
+  left: 20px;
+  bottom: 4px;
+}
+.container .rewards_container .list_container .rewards {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.container .rewards_container .list_container .rewards .reward {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.container .rewards_container .list_container .rewards .reward span {
+  font-weight: bold;
+}
+.container .rewards_container .list_container .rewards .reward img {
+  height: 30px;
+  width: 30px;
+}
+.container .rewards_container .list_container .left_arrows {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.container .rewards_container .list_container .left_arrows .left_arrow:nth-child(even) {
+  transform: rotate(180deg);
+  margin-top: 20px;
+  width: 150px;
+  height: 20px;
+  position: relative;
+  background: lightgray;
+  margin-right: 20px;
+}
+.container .rewards_container .list_container .left_arrows .left_arrow:nth-child(even):before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid lightgray;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.container .rewards_container .list_container .left_arrows .left_arrow:nth-child(even) .text_in_arrow {
+  transform: rotate(180deg);
+  position: relative;
+  right: 20px;
+  top: 0px;
+}
+.container .rewards_container .list_container .left_arrows .left_arrow:nth-child(odd) {
+  transform: rotate(180deg);
+  margin-top: 20px;
+  width: 100px;
+  height: 20px;
+  position: relative;
+  background: lightgray;
+  margin-right: 20px;
+}
+.container .rewards_container .list_container .left_arrows .left_arrow:nth-child(odd):before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid lightgray;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.container .rewards_container .list_container .left_arrows .left_arrow:nth-child(odd) .text_in_arrow {
+  transform: rotate(180deg);
+  position: relative;
+  right: 20px;
+  top: 0px;
+}
+.container .rewards_container .button_zone_rewards {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+}
+.container .rewards_container .button_zone_rewards .btn.btn-light {
+  margin-top: 10px;
+  width: 90%;
+}/*# sourceMappingURL=index.css.map */

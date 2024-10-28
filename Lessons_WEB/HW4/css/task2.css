@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 60%;
+  height: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.container .box {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #ffffff;
+  height: 90%;
+  width: 23%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .box h1 {
+  padding-top: 10px;
+}
+.container .box .grey_text {
+  color: lightgray;
+  padding-top: 0;
+  font-size: medium;
+}
+.container .box h3 {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.container .box p {
+  padding-top: 10px;
+  font-size: smaller;
+}
+.container .box .button {
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px 30px;
+  color: white;
+}
+.container .box .line {
+  width: 100%;
+  height: 2px;
+}
+.container .box .red {
+  background-color: #c73756;
+}
+.container .box .orange {
+  background-color: #d7913b;
+}
+.container .box .blue {
+  background-color: #2b6689;
+}
+.container .box .green {
+  background-color: #63bb34;
+}
+.container .box:hover {
+  transition: all;
+  transform: scale(1.1);
+}/*# sourceMappingURL=task2.css.map */

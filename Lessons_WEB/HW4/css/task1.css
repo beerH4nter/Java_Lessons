@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.root {
+  width: 100vw;
+  height: 5000px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.root table:first-child {
+  width: 600px;
+  height: 500px;
+  border-collapse: collapse;
+  text-align: center;
+}
+.root table:first-child thead:first-child {
+  background-color: #add8e6;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 58px;
+}
+.root table:first-child tbody td:first-child {
+  background-color: #add8e6;
+  font-weight: bold;
+}
+.root table:first-child tbody tr:nth-child(odd) {
+  background-color: #e9e9e9;
+}
+.root table:first-child tbody tr:nth-child(even) {
+  background-color: lightgray;
+}/*# sourceMappingURL=task1.css.map */

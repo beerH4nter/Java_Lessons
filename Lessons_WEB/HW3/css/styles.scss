@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 99%;
+    height: 99%;           /* Убираем внутренние отступы по умолчанию */
+    box-sizing: border-box;   /* Чтобы учитывать отступы и границы в размерах */
+}
+
+
+.upperGrid{
+    height: 20%;
+    padding-top: 10px;
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    gap: 7px;
+    padding-bottom: 10px;
+    .header{
+        background-color: #923158;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 30px;
+        p{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .menu{
+        background-color: #6e1237;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 30px;
+        p{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.middleGrid{
+    height: 78%;
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr), 1fr;
+    gap: 7px;
+    grid-template-areas: 
+    "aside1 mainContent mainContent mainContent mainContent mainContent aside3"
+    "aside2 mainContent mainContent mainContent mainContent mainContent aside3"
+    "aside2 mainContent mainContent mainContent mainContent mainContent aside3"
+    "aside2 mainContent mainContent mainContent mainContent mainContent aside3"
+    "aside2 mainContent mainContent mainContent mainContent mainContent aside3"
+    "zero mainContent mainContent mainContent mainContent mainContent none"
+    "zero mainContent mainContent mainContent mainContent mainContent none"
+    "zero mainContent mainContent mainContent mainContent mainContent none"
+    "footer footer footer footer footer footer footer";
+
+}
+
+.aside1{
+    grid-area: aside1;
+    background-color: #b65b80;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+    p{
+        display: flex;
+        align-items: center;
+    }
+}
+.aside2{
+    grid-area: aside2;
+    background-color: #b65b80;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+    p{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.mainContent{
+    grid-area: mainContent;
+    background-color: #b65b80;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+
+    .section1{
+        background-color: #db92af;
+        height: 150px;
+        width: 85%;
+        margin-bottom: 15px;
+    }
+    .section2{
+        background-color: #db92af;
+        height: 150px;
+        width: 85%;
+    }
+    P{
+        align-self: flex-start;
+        margin-left: 68px;
+        padding-bottom: 10px;
+    }
+
+
+}
+
+.aside3{
+    grid-area: aside3;
+    background-color: #b65b80;
+    color: white;
+    display: flex;
+    justify-content: center;
+    writing-mode: vertical-lr;
+    p{
+        display: flex;
+        align-items: center;
+        letter-spacing: 10px;
+        text-orientation: upright;
+    }
+}
+
+
+.footer{
+    grid-area: footer;
+    height: 50px;
+    background-color: #6e1237;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 30px;
+    p{
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+
+
+.main{
+    width: 95%;
+    height: 95%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    hr{
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+    p{
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    h1{
+        margin-top: 10px;
+    }
+    
+
+}
+
+.mainGrid{
+    margin-top: 10px;
+    width: 1000px;
+    height: 470px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-left: 160px;
+    padding-bottom: 20px;
+}
+
+.box{
+    border: lightgray solid 1px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p{
+        align-self: center;
+        font-weight: bold;
+        height: 10px;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+    }
+
+}

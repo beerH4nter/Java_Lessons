@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar.navbar-expand-lg.bg-body-tertiary {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  height: 50px;
+  padding: 0;
+  background-color: #1b5589 !important;
+}
+.navbar.navbar-expand-lg.bg-body-tertiary .logo img {
+  margin-left: 30px;
+  width: 20px;
+  height: 20px;
+}
+.navbar.navbar-expand-lg.bg-body-tertiary .nav-link {
+  color: white;
+}
+.navbar.navbar-expand-lg.bg-body-tertiary .nav-link.not_current {
+  filter: brightness(70%);
+}
+.navbar.navbar-expand-lg.bg-body-tertiary .profile_button {
+  margin-right: 20px;
+}
+.navbar.navbar-expand-lg.bg-body-tertiary .profile_button a img {
+  height: 40px;
+}
+
+.main-title {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container .settings-types {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #cce5ff;
+  color: #4875ac;
+}
+.container .settings-types p {
+  margin: 0;
+}
+.container .main-content {
+  display: flex;
+  margin-top: 20px;
+}
+.container .main-content .avatar-container {
+  margin-left: 90px;
+}
+.container .main-content .avatar-container img {
+  height: 200px;
+}
+.container .main-content .avatar-container .btn {
+  color: white;
+  margin-top: 10px;
+  background-color: rgb(156, 154, 154);
+  width: 70%;
+}
+.container .main-content .avatar-container .btn:hover {
+  filter: brightness(90%);
+}
+.container .main-content .inputs-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: flex-start;
+}
+.container .main-content .inputs-container .row {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.container .main-content .inputs-container .row .col {
+  margin-left: 50px;
+  width: 400px;
+}
+.container .main-content .inputs-container .row .btn {
+  color: white;
+  background-color: rgb(156, 154, 154);
+  width: 100%;
+}
+.container .main-content .inputs-container .row .btn:hover {
+  filter: brightness(90%);
+}/*# sourceMappingURL=task3.css.map */
